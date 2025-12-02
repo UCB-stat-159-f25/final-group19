@@ -5,15 +5,15 @@ import requests
 import time
 import re
 
-def write_inaugural_addresses():
+def write_inaugural_addresses(n_speeches):
     base_url = "https://www.presidency.ucsb.edu/documents/inaugural-address"
     
-    speech_pres_name = np.empty(55, dtype=object)
-    speech_pres_num = np.empty(55, dtype=object)
-    speech_date = np.empty(55, dtype=object)
-    speech_content = np.empty(55, dtype=object)
+    speech_pres_name = np.empty(n_speeches, dtype=object)
+    speech_pres_num = np.empty(n_speeches, dtype=object)
+    speech_date = np.empty(n_speeches, dtype=object)
+    speech_content = np.empty(n_speeches, dtype=object)
 
-    for i in range(0, 55):
+    for i in range(n_speeches):
         curr_url = base_url + '-' + str(i) if i > 0 else base_url
         response = requests.get(curr_url, timeout=10)
         soup = BeautifulSoup(response.content, 'html.parser')
@@ -51,4 +51,6 @@ def write_inaugural_addresses():
     inaugural_address.to_csv("data/inaugural_address.csv")
 
 if __name__ == "__main__":
-    write_inaugural_addresses()
+    # number of speeches will change as new presidents come
+    NUM_SPEECHES = 55
+    write_inaugural_addresses(n_speeches=NUM_SPEECHES)
