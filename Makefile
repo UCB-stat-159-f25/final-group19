@@ -17,3 +17,5 @@ data:
 
 clean: 
 	rm -rf data/*
+	rm -rf __pycache__
+	rm -rf .pytest_cache
