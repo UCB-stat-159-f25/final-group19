@@ -5,7 +5,14 @@ import requests
 import time
 import re
 
-def write_inaugural_addresses(n_speeches):
+def write_inaugural_addresses(n_speeches=55):
+    """
+    Creates a csv file of inaugural addresses from the presidency.ucsb.edu website.
+    
+    Args:
+        n_speeches (int): Number of inaugural addresses to scrape.
+                          (Will change as new presidents come).
+    """
     base_url = "https://www.presidency.ucsb.edu/documents/inaugural-address"
     
     speech_pres_name = np.empty(n_speeches, dtype=object)
