@@ -14,3 +14,6 @@ env:
 
 data:
 	$(PYTHON) make_data.py
+
+clean: 
+	rm -rf data/*
