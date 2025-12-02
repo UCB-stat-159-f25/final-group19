@@ -1,0 +1,11 @@
+name: inaugural-address
+channels:
+  - conda-forge
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - pandas
+  - numpy
+  - bs4
+  - requests
+prefix: /Users/calvin/miniconda3/envs/inaugural-address
