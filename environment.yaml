@@ -9,4 +9,5 @@ dependencies:
   - bs4
   - requests
   - pytest
+  - ipykernel
 prefix: /Users/calvin/miniconda3/envs/inaugural-address
