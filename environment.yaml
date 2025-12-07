@@ -10,4 +10,6 @@ dependencies:
   - requests
   - pytest
   - ipykernel
+  - python=3.13 # spacy doesn't support 3.14 yet
+  - spacy
 prefix: /Users/calvin/miniconda3/envs/inaugural-address
