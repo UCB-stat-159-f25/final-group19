@@ -10,6 +10,9 @@ dependencies:
   - requests
   - pytest
   - ipykernel
-  - python=3.13 # spacy doesn't support 3.14 yet
+  - python=3.12 # spacy doesn't support 3.14, gensim doesn't support 3.13
   - spacy
+  - pyLDAvis
+  - pip:
+      - gensim==4.4.0
 prefix: /Users/calvin/miniconda3/envs/inaugural-address
