@@ -15,4 +15,6 @@ dependencies:
   - pyLDAvis
   - pip:
       - gensim==4.4.0
+      - en-core-web-sm==3.8.0
+      - afinn==0.1
 prefix: /Users/calvin/miniconda3/envs/inaugural-address
