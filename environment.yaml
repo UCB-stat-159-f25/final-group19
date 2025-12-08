@@ -6,6 +6,8 @@ channels:
 dependencies:
   - pandas
   - numpy
+  - matplotlib
+  - seaborn
   - bs4
   - requests
   - pytest
