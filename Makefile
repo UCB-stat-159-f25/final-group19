@@ -1,7 +1,7 @@
 ENV_NAME = inaugural-address
 PYTHON = python
 
-.PHONY: all env data
+.PHONY: all env data clean
 
 all: env data
 
@@ -11,6 +11,7 @@ env:
 	else \
 		conda env create -f environment.yaml; \
 	fi
+	@conda run -n inaugural-address python -m spacy download en_core_web_sm
 
 data:
 	$(PYTHON) make_data.py

@@ -4,12 +4,19 @@ channels:
   - https://repo.anaconda.com/pkgs/main
   - https://repo.anaconda.com/pkgs/r
 dependencies:
-  - pandas
-  - numpy
+  - python=3.11 # spacy doesn't support 3.14, gensim doesn't support 3.13
   - matplotlib
   - seaborn
-  - bs4
-  - requests
-  - pytest
-  - ipykernel
+  - pandas=2.0
+  - numpy>=1.26,<2.0
+  - beautifulsoup4=4.12 
+  - requests=2.32
+  - pytest=8.3
+  - ipykernel=6.31
+  - spacy=3.8
+  - pip
+  - pip:
+      - gensim==4.4.0
+      - afinn==0.1
+  - pyLDAvis=3.4
 prefix: /Users/calvin/miniconda3/envs/inaugural-address
