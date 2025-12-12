@@ -1,0 +1,24 @@
+1. [ChatGPT] (Navein) Q: How do I create a running tally of counts within a group when using the groupby function in python.
+
+A: Use the .cumcount(), which starts at 0 and tallies the total elements within your group. {This was used for the presidential term tallies in the multi-term word count analysis of part1.ipynb}
+
+2. [ChatGPT] (Navein) Q: What are some common filler words to ignore when counting "common, yet significant" words in presidential inaugural speeches?
+
+A: The following list will cover most "stopwords"...
+
+filler_words = {"the", "and", "to", "of", "a", "in", "that", "it", "is", "was",
+    "for", "on", "as", "with", "be", "by", "he", "she", "at", "from",
+    "or", "an", "this", "but", "not", "are", "his", "her", "they",
+    "their", "we", "you", "i", "our", "us", "them", "were", "been",
+    "has", "have", "had", "will", "would", "shall", "may", "might",
+    "so", "which", "who", "what", "when", "where", "why", "how",
+    "can", "could", "should", "into", "than", "then", "there",
+    "here", "these", "those", "its", "also", "such"}
+
+{This was used for the common words analysis in part1.ipynb}
+
+3. [ChatGPT] (Navein) Q: How do you efficiently count the frequency of words in a given list?
+
+A: Import the "Counter" package from "colllections" module to count frequencies of top words and use methods like "most_common" to subfilter a specific number of top words.
+
+{This was used for the common words analysis in part1.ipynb}
