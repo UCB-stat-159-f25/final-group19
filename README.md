@@ -13,13 +13,13 @@ The dataset consists of 4 columns and 55 rows. Each row represents an inaugural 
 To use this dataset, download the CSV file from the [UCSB site](https://www.presidency.ucsb.edu/documents/inaugural-address) or use our make_data.py script.
 
 ## Project Website
-The project's Myst website can be accessed [here](https://stat159.datahub.berkeley.edu/user/clara_reckhorn/myst-build/final-group19/?_t=1765598538130)
+The project's Myst website can be accessed [here](https://stat159.datahub.berkeley.edu/user/clara_reckhorn/myst-build/final-group19)
 
 ## Repository Structure
 
 The repository is structured as follows:
 
-* `data/`: Contains the raw dataset
+* `data/`: Contains the dataset
 * `main.ipynb`: Main project notebook, providing an overview of the analysis and results
 * `make_data.py`: Script to create dataset in `/data`
 * `test_make_data.py`: Script to test the script which creates dataset in `/data`
@@ -55,4 +55,4 @@ To run tests, we have the test_make_data.py file.
 This project is licensed under the MIT License.
 
 ## Additional Information
-For more detailed information about the analysis and results, please refer to the main narrative notebook available here [here](https://stat159.datahub.berkeley.edu/user/clara_reckhorn/myst-build/final-group19/?_t=1765598538130).
+For more detailed information about the analysis and results, please refer to the main narrative notebook available here [here](https://stat159.datahub.berkeley.edu/user/clara_reckhorn/myst-build/final-group19).
