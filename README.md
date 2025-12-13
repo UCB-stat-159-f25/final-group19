@@ -26,7 +26,6 @@ The repository is structured as follows:
 * `part1.ipynb`: Notebook containing analysis to answer pt1 from main noteboook
 * `part2.ipynb`: Notebook containing analysis to answer pt2 from main noteboook
 * `part3.ipynb`: Notebook containing analysis to answer pt3 from main noteboook
-* `part4.ipynb`: Notebook containing analysis to answer pt4 from main noteboook
 * `environment.yml`: Environment file with required packages for the project
 * `Makefile`: Makefile to build JupyterBook for the repository and manage other tasks
 
