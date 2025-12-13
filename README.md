@@ -5,9 +5,7 @@
 
 ## Overview
 
-This project uses a variety of text analysis and visualization techniques to study the inaugural addresses of all presidents of the United States. The scientific motivation behind this is to identify common words and themes, measure sentiment, and discover how tone and language have evolved over time. Using NLP methods, with tools such as spaCy, we perform text processing and a linguistic analysis. We have visualized our results in ways including bar charts and sentiment summaries to show patterns across presidencies and identify outliers, as well as how party affiliation influences speech content, sentiment, and themes. ## Dataset
-The dataset used in this project is the [Airbnb Cleaned Europe Dataset](https://www.kaggle.com/dipeshkhemani/airbnb-cleaned-europe-dataset) available on Kaggle. The dataset contains listings information of Airbnb accommodations in various European cities. The dataset is cleaned and preprocessed, making it suitable for data analysis and modeling tasks.
-
+This project uses a variety of text analysis and visualization techniques to study the inaugural addresses of all presidents of the United States. The scientific motivation behind this is to identify common words and themes, measure sentiment, and discover how tone and language have evolved over time. Using NLP methods, with tools such as spaCy, we perform text processing and a linguistic analysis. We have visualized our results in ways including bar charts and sentiment summaries to show patterns across presidencies and identify outliers, as well as how party affiliation influences speech content, sentiment, and themes.
 ## Dataset
 
 The dataset consists of 4 columns and 55 rows. Each row represents an inaugural speech, and the columns contain various attributes related to the speech, including the president name, president number, date, and the text of the speech. We also join the original dataset to party affiliation for some analyses, creating a fifth column. 
