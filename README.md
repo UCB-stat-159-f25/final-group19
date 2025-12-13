@@ -57,4 +57,4 @@ To run tests, we have the test_make_data.py file.
 This project is licensed under the MIT License.
 
 ## Additional Information
-For more detailed information about the analysis and results, please refer to the main narrative notebook available here [here](https://ucb-stat-159-s23.github.io/project-Group28/main.html).
+For more detailed information about the analysis and results, please refer to the main narrative notebook available here [here](https://stat159.datahub.berkeley.edu/user/clara_reckhorn/myst-build/final-group19/?_t=1765598538130).
