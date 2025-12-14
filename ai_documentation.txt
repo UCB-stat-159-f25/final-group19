@@ -22,3 +22,54 @@ filler_words = {"the", "and", "to", "of", "a", "in", "that", "it", "is", "was",
 A: Import the "Counter" package from "colllections" module to count frequencies of top words and use methods like "most_common" to subfilter a specific number of top words.
 
 {This was used for the common words analysis in part1.ipynb}
+
+4. [Anthropic/Claude] (Calvin) Q: How can I create a unit test that immitates an HTTP response in Python? This is for my function that returns something I scraped on the web.
+
+A: Use the patch decorator and the Mock function from the unittest.mock package. Example:
+
+import unittest
+from unittest.mock import patch, Mock
+import requests
+
+def scrape_website(url):
+    response = requests.get(url)
+    response.raise_for_status()
+    return response.json()['data']
+
+class TestWebScraper(unittest.TestCase):
+    @patch('requests.get')
+    def test_scrape_website_success(self, mock_get):
+        # Create a mock response object
+        mock_response = Mock()
+        mock_response.status_code = 200
+        mock_response.json.return_value = {'data': 'scraped content'}
+        mock_get.return_value = mock_response
+        
+        result = scrape_website('https://example.com')
+        
+        self.assertEqual(result, 'scraped content')
+        mock_get.assert_called_once_with('https://example.com')
+
+5. [Anthropic/Claude] (Calvin) Q: (Follow-up to 4.) is it possible to skip sleep delays?
+
+A: Yes! You can mock or patch the sleep function in your tests. Here's how:
+
+import unittest
+from unittest.mock import patch
+import time
+
+def scrape_with_delay(url):
+    # Scrape data
+    data = fetch_data(url)
+    # Wait before next request
+    time.sleep(5)
+    return data
+
+class TestScraper(unittest.TestCase):
+    @patch('time.sleep')  # Mock sleep to do nothing
+    def test_scrape_without_waiting(self, mock_sleep):
+        result = scrape_with_delay('https://example.com')
+        
+        # Test runs instantly!
+        mock_sleep.assert_called_once_with(5)
+        # Your assertions here

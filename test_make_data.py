@@ -22,9 +22,6 @@ def mock_response():
 
 def test_write_inaugural_addresses_creates_csv(mock_response):
     """Test that write_inaugural_addresses creates a CSV file."""
-    # Mock the requests.get and create data directory
-    os.makedirs("data", exist_ok=True)
-    
     with patch("make_data.requests.get", return_value=mock_response):
         with patch("make_data.time.sleep"):  # Skip sleep delays
             write_inaugural_addresses(n_speeches=1)
@@ -43,7 +40,6 @@ def test_write_inaugural_addresses_output_structure(mock_response):
         with patch("make_data.time.sleep"):
             write_inaugural_addresses(n_speeches=1)
     
-    # Read the generated CSV
     df = pd.read_csv("data/inaugural_address.csv")
     
     # Check expected columns
